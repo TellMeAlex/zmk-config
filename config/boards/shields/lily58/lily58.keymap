@@ -15,6 +15,16 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
+        raise_layer {
+            if-layers = <1>;
+            then-layer = <3>;
+        };
+
+        lower_layer {
+            if-layers = <2>;
+            then-layer = <3>;
+        };
+
         adjust_layer {
             if-layers = <1 2>;
             then-layer = <3>;
